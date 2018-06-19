@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+
+aside{
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(-230px);
+    transition: 7s;
+}
+
+aside h1{
+    display: flex;
+    font-size: 18pt;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+aside p{
+    font-size: 14pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+aside div{
+    margin-left: 225px;
+    cursor: pointer;
+}
+
+#linha1{
+    background-color: black;
+    height: 4px;
+    width: 40px;
+    margin: 4px 5px 2px;
+}
+
+#linha2{
+    background-color: red;
+    height: 4px;
+    width: 40px;
+    margin: 4px 5px 2px;
+}
+
+#linha3{
+    background-color: yellow;
+    height: 4px;
+    width: 40px;
+    margin: 4px 5px 2px;
+}
+
+aside.active{
+    transform: translateX(0);
+    transition: 7s;
+}
+
+#linha2.ativo{
+    background-color: blue;
+}
+
+#linha1.work{
+    background-color: aqua;
+    transform: rotateX(180deg);
+}
+
+#linha3.agoravai{
+    background-color: orange;
+    transform: rotateY(180deg);
+}
